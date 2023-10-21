@@ -15,6 +15,9 @@ public class PredicateDemo {
 		System.out.println(cities);
 		Predicate<String>filtercity=city->city.equals("mumbai");
 		cities.stream().filter(filtercity).forEach(System.out::println);
+		 boolean result=filtercity.test("delhi");
+		 System.out.print(result);
+		 
 	
 	}
 

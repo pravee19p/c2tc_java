@@ -19,7 +19,7 @@ public class StreamOperations {
 	  System.out.println("Squares of"+Arrays.toString(values));
 	   st.map(num->num*num) .forEach(System.out::println);
 	
-	//limit returns first n element
+	//limit returns first n element 
 	   System.out.println("first 2 elements");
 	   Arrays.stream(values).limit(2).forEach(System.out::println);
 	   //skip
