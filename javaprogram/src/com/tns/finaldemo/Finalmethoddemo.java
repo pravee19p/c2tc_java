@@ -2,10 +2,12 @@ package com.tns.finaldemo;
 
 public class Finalmethoddemo extends Finalmethod {
 
-	public static void main(String[] args) {
+	void display()
+	{
 		// TODO Auto-generated method stub
 		
 				
 	}
+	
 
 }
