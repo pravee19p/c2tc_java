@@ -8,7 +8,7 @@ public class StreamDemo {
 	public static void main(String []args)
 	{
 		List<Integer> list=Arrays.asList(2,3,4,5,6,5,1,7,9,3,2);
-		System.out.println(list);
+		System.out.println("values:"+list);
 		List<Integer> distinctnum=list.stream().distinct().collect(Collectors.toList());
 		System.out.println("distinct values: "+distinctnum);
 		List<Integer> sortednum=list.stream().sorted().collect(Collectors.toList());

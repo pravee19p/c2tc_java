@@ -14,25 +14,30 @@ public class Jdbcinsert {
 //		System.out.println("the sql statement is "+sqlInsert);
 //		int countInserted=stmt.executeUpdate(sqlInsert);
 //		System.out.println(countInserted +" records inserted");
-		//delete the record
+//		//delete the record
 //		String sqldelete="delete from books where bookid=128";
 //		System.out.println("the sql statement is "+sqldelete);
 //		int countdeleted=stmt.executeUpdate(sqldelete);
 //		System.out.println(countdeleted +" records deleted");
-		//display records
-		String strselect="select * from books";
-		System.out.println("the sql statement is "+strselect);
-		ResultSet rst=stmt.executeQuery(strselect);
-		System.out.println(" records are: ");
-		int rowcount=0;
-		while(rst.next()) {
+//		//display records
+//		String strselect="select * from books";
+//		System.out.println("the sql statement is "+strselect);
+//		ResultSet rst=stmt.executeQuery(strselect);
+//		System.out.println(" records are: ");
+//		int rowcount=0;
+//		while(rst.next()) {
+//		
+//			System.out.println(rst.getInt("bookid"));
+//			System.out.println(rst.getString("booktitle"));
+//			System.out.println(rst.getInt("price"));
+//			System.out.println(rst.getInt("qty"));
+//			++rowcount;
+//		}
+		String sqlupdate="update  books set booktitle='php'  where bookid=130";
+		System.out.println("the sql statement is "+sqlupdate);
+		int countupdate=stmt.executeUpdate(sqlupdate);
+		System.out.println(countupdate +" records updated");
 		
-			System.out.println(rst.getInt("bookid"));
-			System.out.println(rst.getString("booktitle"));
-			System.out.println(rst.getInt("price"));
-			System.out.println(rst.getInt("qty"));
-			++rowcount;
-		}
 		}
 		catch(SQLException e)
 		{
