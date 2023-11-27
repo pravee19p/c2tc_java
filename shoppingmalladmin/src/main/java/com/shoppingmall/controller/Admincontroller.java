@@ -82,6 +82,7 @@ public class Admincontroller {
 	//delete admin
 	//localhost:8080/admins/id
 	@DeleteMapping("/admins/{id}")
+	@ResponseStatus(code=HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Integer id)
 	{
 		service.delete(id);
