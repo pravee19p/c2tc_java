@@ -1,11 +1,13 @@
 package com.shoppingmall.controller;
 
 import java.util.List;
+
 import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +21,10 @@ import com.shoppingmall.entity.Admin;
 
 import com.shoppingmall.service.Adminservice;
 
+
+
 @RestController
+@CrossOrigin("http://localhost:3000")
 public class Admincontroller {
 	
 	@Autowired
@@ -54,7 +59,7 @@ public class Admincontroller {
 	
 	//creates admin
 	//localhost:8080/admins
-	@PostMapping("/admins")
+	@PostMapping("/admins/add")
 	@ResponseStatus(code=HttpStatus.CREATED)
 	public void add(@RequestBody Admin admin)
 	{
@@ -64,7 +69,7 @@ public class Admincontroller {
 	
 	//update admin
 	//localhost:8080/admins/id
-	@PutMapping("/admins/{id}")
+	@PutMapping("/admins/update/{id}")
 	public ResponseEntity<?> update(@RequestBody Admin admin,@PathVariable Integer id)
 	{
 		try {
