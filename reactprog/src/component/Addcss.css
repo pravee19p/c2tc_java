@@ -1,0 +1,210 @@
+body{
+    background-color:#FAF1E4; 
+}
+
+h1{
+    color:#596b48
+}
+.topcontainer{
+    display:flex;
+    color:white;
+    font-size:30px;
+    font-weight: 400;
+    background-color: #556745;
+    justify-content:space-between; 
+    align-items: center;
+    
+}
+
+.topcontainershop{
+    display:flex;
+    color:white;
+    font-size:30px;
+    font-weight: 400;
+    background-color: #556745;
+    justify-content:space-between; 
+    align-items: center; 
+   
+}
+.left{
+    margin: 0 20px;
+}
+.right{
+  text-align: right;
+  text-decoration: none;
+  color:white; 
+  margin: 0 20px;
+  }
+.navbar {
+    background: #CEDEBD;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px;
+  }
+  
+  
+  .navbar > * {
+    list-style: none;
+    font-size: 30px;
+    border: 2px solid #7d916b;
+    border-radius: 15px;
+    padding: 5px;
+    flex-basis:300px;
+   
+  }
+  .divimg{
+   background-image: url('C:\Users\prave\OneDrive\Desktop\C21\reactprog\src\component\images\bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    
+  }
+  .pimg{
+    font-size: 30px;
+    color: #435334;
+    display: flex;
+    font-family:'Times New Roman', Times, serif ;
+  }
+  .pimg p{
+    margin:  10px ; 
+    text-align: justify; 
+  }
+ img{
+    margin:80px;
+    height:400px;
+    width:600px;
+    
+    
+ }
+  .custom-link {
+    text-decoration: none;
+    color: #435334;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .custom-link:hover {
+    background-color: #e0e5db;
+    color: rgb(0, 118, 2);
+  }
+  
+
+.form{
+    box-shadow:#667a53 0px 5px 15px;
+    border:2px solid none;
+    padding:20px ;
+    height: 500px;
+    width:500px;
+    border-radius:10px;
+    margin-top: 50px;
+    background-color: #e0e5db;
+}
+.formupdate{
+    box-shadow:#667a53 0px 5px 15px;
+    border:2px solid none;
+    padding:20px ;
+    height: 580px;
+    width:500px;
+    border-radius:10px;
+    margin-top: 50px;
+    background-color: #e0e5db;
+}
+.formdel{
+    box-shadow:#667a53 0px 5px 15px;
+    height:300px;
+    width:500px;
+    border:2px solid none;
+    margin-top:50px;
+    margin-left:500px;
+    background-color: #e0e5db;
+
+}
+.formdel button{
+     
+    width:200px;
+    padding:10px;
+    color:#435334;
+    font-size: 30px;
+    margin-top: 30px;;
+}
+.formdel button:hover{
+    background-color:  #e0e5db;
+    color: white;
+
+}
+.condel{
+    padding:50px;
+}
+.formcl{
+    box-shadow:#667a53 0px 5px 15px;
+    height:350px;
+    width:580px;
+    border:2px solid none;
+    margin-top:50px;
+    /* margin-left:20px; */
+    background-color: #e0e5db;
+}
+.con{
+    padding:50px;
+}
+.formcl button{
+     
+    width:200px;
+    margin-top:50px;
+    padding:10px;
+    color:#435334;
+    font-size: 30px;
+}
+.formcl button:hover{
+    background-color:  #e0e5db;
+    color: white;
+
+}
+.con{
+    margin:50px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+label{
+    font-size: 30px;
+    color:#435334;
+   
+}
+input{
+    width:200px;
+    height:30px;
+    margin:20px;
+    padding:5px;
+    text-align: center;
+}
+.c{margin-left:158px;}
+.cl{margin-left:100px;}
+.cl1{margin-left: 28px;}
+.cl2{margin-left: 20px;}
+.cl3{margin-left: 88px;}
+.btn{
+    margin: 20px;
+    height:50px;
+    width:200px;
+    color:#435334;
+    font-size: 30px;
+      
+}
+.btn1:hover {
+    background-color:  #e0e5db;
+    color: white;
+  }
+  table{
+    margin-top:50px;
+    background-color: #c9cdc4;
+  }
+  tr,th,td{
+    border:2px solid #435334;
+    padding:20px;
+    
+  }
